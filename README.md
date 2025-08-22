@@ -76,6 +76,64 @@ ml_manager/
 └── mlruns/                   # MLflow experiment tracking data (managed by MLflow server)
 ```
 
+## Project Flow
+
+This section outlines the high-level operational flow of the project, illustrating how different components interact.
+
+```
++---------------------+       +---------------------+
+|                     |       |                     |
+|  User (CLI)         |       |  MLflow UI          |
+|                     |       |  (http://localhost:5000) |
++----------+----------+       +----------+----------+
+           |                             ^
+           | 1. docker-compose up --build -d
+           v                             |
++----------+----------+       +----------+----------+
+|                     |       |                     |
+|  Docker Compose     |------>|  MLflow Server      |
+|  (Orchestration)    |       |  (Containerized)    |
+|                     |       |  - Builds from Dockerfile.mlflow |
+|                     |       |  - Exposes port 5000 |
+|                     |       |  - Stores data in ./mlruns volume |
++----------+----------+       +----------+----------+
+           |                             ^
+           | 2. docker-compose run --rm  | 3. MLflow Tracking (Parameters, Metrics, Artifacts)
+           |    (linear_model_trainer/logistic_model_trainer)
+           v                             |
++----------+----------+       +----------+----------+
+|                     |       |                     |
+|  Model Training     |------>|  MLflow Server      |
+|  Container          |       |  (via http://mlflow-server:5000) |
+|  (linear_model/logistic_model)|       |                     |
+|  - Builds from Dockerfile (base) |       |                     |
+|  - Context: model-specific dir |       |                     |
+|  - Copies params.json, train.py, requirements.txt |       |                     |
+|  - Installs dependencies |       |                     |
+|  - Runs train.py            |       |                     |
+|  - Reads params.json        |       |                     |
+|  - Trains model             |       |                     |
+|  - Logs to MLflow           |       |                     |
++---------------------+       +---------------------+
+```
+
+**Detailed Flow Description:**
+
+1.  **Setup and Initialization:**
+    *   The user starts the project by running `docker-compose up --build -d`.
+    *   Docker Compose builds the `mlflow-server` image using `Dockerfile.mlflow` and starts the `mlflow-server` container. This container exposes port 5000 and mounts the local `./mlruns` directory for persistent storage.
+    *   Docker Compose also builds the base images for `linear_model` and `logistic_model` services using the generic `Dockerfile`, preparing them for execution.
+
+2.  **Model Training Execution:**
+    *   The user initiates a model training run (e.g., `docker-compose run --rm linear_model_trainer python linear_model/train.py`).
+    *   Docker Compose creates and runs a temporary container for the specified model.
+    *   Inside this container, the `train.py` script executes. It sets `MLFLOW_TRACKING_URI` to `http://mlflow-server:5000` to connect to the MLflow server.
+    *   The script loads parameters, trains the model, and then logs parameters, metrics, and the trained model artifact to the MLflow server.
+    *   Upon completion, the temporary container is removed.
+
+3.  **MLflow UI Access:**
+    *   The user can access the MLflow UI at `http://localhost:5000` to view and manage all logged experiments, runs, parameters, metrics, and artifacts.
+
 ## Usage
 
 ### Training Models

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/1f647608c96242ec93fa59983003e18c/artifacts
+end_time: 1755857119142
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: 1f647608c96242ec93fa59983003e18c
+run_name: auspicious-pug-940
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755857113949
+status: 3
+tags: []
+user_id: root

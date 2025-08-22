@@ -1,0 +1,5 @@
+{
+    "model_type": "LogisticRegression",
+    "n_samples": 200,
+    "solver": "liblinear"
+}

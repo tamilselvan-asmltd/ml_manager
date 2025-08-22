@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/8df2e2a6282c490497e62c0ee7c6cf2d/artifacts
+end_time: 1755858078431
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: 8df2e2a6282c490497e62c0ee7c6cf2d
+run_name: flawless-snake-960
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755858078338
+status: 3
+tags: []
+user_id: root

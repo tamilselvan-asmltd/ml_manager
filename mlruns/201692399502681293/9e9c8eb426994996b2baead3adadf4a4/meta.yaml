@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/9e9c8eb426994996b2baead3adadf4a4/artifacts
+end_time: 1755856791658
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: 9e9c8eb426994996b2baead3adadf4a4
+run_name: redolent-snake-88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755856791582
+status: 3
+tags: []
+user_id: root

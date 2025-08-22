@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/1f9b171fd8744dc386da4c762fbf3ed1/artifacts
+end_time: 1755857840733
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: 1f9b171fd8744dc386da4c762fbf3ed1
+run_name: mercurial-cub-811
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755857840615
+status: 3
+tags: []
+user_id: root

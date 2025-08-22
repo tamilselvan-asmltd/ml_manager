@@ -1,0 +1,10 @@
+FROM python:3.9-slim-buster
+
+WORKDIR /app
+
+RUN pip install --pre mlflow
+
+
+EXPOSE 5000
+
+CMD ["mlflow", "server", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "file:///mlruns"]

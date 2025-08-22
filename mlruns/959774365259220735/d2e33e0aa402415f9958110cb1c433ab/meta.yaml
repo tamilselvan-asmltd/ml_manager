@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/d2e33e0aa402415f9958110cb1c433ab/artifacts
+end_time: 1755858213656
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: d2e33e0aa402415f9958110cb1c433ab
+run_name: agreeable-mink-194
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755858208536
+status: 3
+tags: []
+user_id: root

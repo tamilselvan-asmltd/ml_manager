@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/733e992072b44ff2a6ad96e5f8fed6f8/artifacts
+end_time: 1755858212968
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: 733e992072b44ff2a6ad96e5f8fed6f8
+run_name: big-goat-952
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755858212867
+status: 3
+tags: []
+user_id: root

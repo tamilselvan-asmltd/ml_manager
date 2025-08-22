@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/dca2cc6840ca48a89255f78af9a8107d/artifacts
+end_time: 1755857840710
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: dca2cc6840ca48a89255f78af9a8107d
+run_name: amazing-hog-543
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755857840600
+status: 3
+tags: []
+user_id: root

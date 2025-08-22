@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  linear_model:
+    build:
+      context: ./linear_model
+      dockerfile: ../Dockerfile
+    container_name: linear_model_trainer
+    env_file:
+      - ./docker.env
+    depends_on:
+      - mlflow-server
+
+  logistic_model:
+    build:
+      context: ./logistic_model
+      dockerfile: ../Dockerfile
+    container_name: logistic_model_trainer
+    env_file:
+      - ./docker.env
+    depends_on:
+      - mlflow-server
+
+  mlflow-server:
+    image: mlflow_server_image
+    build:
+      context: .
+      dockerfile: Dockerfile.mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+    environment:
+      - MLFLOW_BACKEND_STORE_URI=file:///mlruns
+      - MLFLOW_TRACKING_URI=http://0.0.0.0:5000
+    container_name: mlflow_tracking_server
+
+  

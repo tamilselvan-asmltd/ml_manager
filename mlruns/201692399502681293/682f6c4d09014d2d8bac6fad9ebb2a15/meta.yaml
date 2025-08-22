@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/682f6c4d09014d2d8bac6fad9ebb2a15/artifacts
+end_time: 1755856412573
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: 682f6c4d09014d2d8bac6fad9ebb2a15
+run_name: delightful-doe-475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755856412488
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/a7780169a12340238552046d060d57e3/artifacts
+end_time: 1755848798881
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: a7780169a12340238552046d060d57e3
+run_name: capricious-whale-113
+run_uuid: a7780169a12340238552046d060d57e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755848793738
+status: 4
+tags: []
+user_id: root

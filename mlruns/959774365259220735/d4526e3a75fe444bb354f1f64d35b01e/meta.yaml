@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/d4526e3a75fe444bb354f1f64d35b01e/artifacts
+end_time: 1755857913352
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: d4526e3a75fe444bb354f1f64d35b01e
+run_name: monumental-boar-105
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755857908193
+status: 3
+tags: []
+user_id: root

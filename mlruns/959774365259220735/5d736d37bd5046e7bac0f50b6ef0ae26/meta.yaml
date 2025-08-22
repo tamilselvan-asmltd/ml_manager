@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/5d736d37bd5046e7bac0f50b6ef0ae26/artifacts
+end_time: 1755858249020
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: 5d736d37bd5046e7bac0f50b6ef0ae26
+run_name: luxuriant-smelt-412
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755858248940
+status: 3
+tags: []
+user_id: root

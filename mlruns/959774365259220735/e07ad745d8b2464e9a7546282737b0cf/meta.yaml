@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/e07ad745d8b2464e9a7546282737b0cf/artifacts
+end_time: 1755856770944
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: e07ad745d8b2464e9a7546282737b0cf
+run_name: nervous-ape-35
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755856770847
+status: 3
+tags: []
+user_id: root

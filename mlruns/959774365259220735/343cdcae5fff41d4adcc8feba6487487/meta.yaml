@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/343cdcae5fff41d4adcc8feba6487487/artifacts
+end_time: 1755857820634
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: 343cdcae5fff41d4adcc8feba6487487
+run_name: sassy-snail-612
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755857820490
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/ae014f619dfd42d8be901f2609e8d85e/artifacts
+end_time: 1755848980954
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: ae014f619dfd42d8be901f2609e8d85e
+run_name: chill-frog-986
+run_uuid: ae014f619dfd42d8be901f2609e8d85e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755848975793
+status: 3
+tags: []
+user_id: root

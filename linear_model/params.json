@@ -1,0 +1,5 @@
+{
+    "model_type": "LinearRegression",
+    "n_samples": 100,
+    "fit_intercept": true
+}

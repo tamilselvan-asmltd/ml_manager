@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/92013d83f6844db18f18e982615303eb/artifacts
+end_time: 1755857913350
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: 92013d83f6844db18f18e982615303eb
+run_name: auspicious-mouse-922
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755857908185
+status: 3
+tags: []
+user_id: root

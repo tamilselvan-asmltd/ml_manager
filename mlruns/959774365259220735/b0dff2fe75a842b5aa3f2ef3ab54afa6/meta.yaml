@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/b0dff2fe75a842b5aa3f2ef3ab54afa6/artifacts
+end_time: 1755857985624
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: b0dff2fe75a842b5aa3f2ef3ab54afa6
+run_name: blushing-dove-107
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755857980372
+status: 3
+tags: []
+user_id: root

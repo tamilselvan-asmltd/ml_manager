@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/201692399502681293/31404d167d224af7a6c567f90131d770/artifacts
+end_time: 1755854919584
+entry_point_name: ''
+experiment_id: '201692399502681293'
+lifecycle_stage: active
+run_id: 31404d167d224af7a6c567f90131d770
+run_name: welcoming-dove-98
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755854919501
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/959774365259220735/67d14a9485bc424c846849a57e3bebe9/artifacts
+end_time: 1755848576861
+entry_point_name: ''
+experiment_id: '959774365259220735'
+lifecycle_stage: active
+run_id: 67d14a9485bc424c846849a57e3bebe9
+run_name: unleashed-lark-938
+run_uuid: 67d14a9485bc424c846849a57e3bebe9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755848576807
+status: 4
+tags: []
+user_id: root

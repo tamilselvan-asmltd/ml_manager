@@ -78,6 +78,8 @@ ml_manager/
 
 ## Project Flow
 
+![Flow Diagram](flow_diagram.png)
+
 This section outlines the high-level operational flow of the project, illustrating how different components interact.
 
 ```

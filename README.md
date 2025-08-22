@@ -80,44 +80,6 @@ ml_manager/
 
 ![Flow Diagram](flow_diagram.png)
 
-This section outlines the high-level operational flow of the project, illustrating how different components interact.
-
-```
-+---------------------+       +---------------------+
-|                     |       |                     |
-|  User (CLI)         |       |  MLflow UI          |
-|                     |       |  (http://localhost:5000) |
-+----------+----------+       +----------+----------+
-           |                             ^
-           | 1. docker-compose up --build -d
-           v                             |
-+----------+----------+       +----------+----------+
-|                     |       |                     |
-|  Docker Compose     |------>|  MLflow Server      |
-|  (Orchestration)    |       |  (Containerized)    |
-|                     |       |  - Builds from Dockerfile.mlflow |
-|                     |       |  - Exposes port 5000 |
-|                     |       |  - Stores data in ./mlruns volume |
-+----------+----------+       +----------+----------+
-           |                             ^
-           | 2. docker-compose run --rm  | 3. MLflow Tracking (Parameters, Metrics, Artifacts)
-           |    (linear_model_trainer/logistic_model_trainer)
-           v                             |
-+----------+----------+       +----------+----------+
-|                     |       |                     |
-|  Model Training     |------>|  MLflow Server      |
-|  Container          |       |  (via http://mlflow-server:5000) |
-|  (linear_model/logistic_model)|       |                     |
-|  - Builds from Dockerfile (base) |       |                     |
-|  - Context: model-specific dir |       |                     |
-|  - Copies params.json, train.py, requirements.txt |       |                     |
-|  - Installs dependencies |       |                     |
-|  - Runs train.py            |       |                     |
-|  - Reads params.json        |       |                     |
-|  - Trains model             |       |                     |
-|  - Logs to MLflow           |       |                     |
-+---------------------+       +---------------------+
-```
 
 **Detailed Flow Description:**
 

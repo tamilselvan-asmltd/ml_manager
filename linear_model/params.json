@@ -2,4 +2,6 @@
     "model_type": "LinearRegression",
     "n_samples": 100,
     "fit_intercept": true
+,
+    "csv_path": "linear_model/Machine_Load_vs_Power_Consumption_Dataset.csv"
 }

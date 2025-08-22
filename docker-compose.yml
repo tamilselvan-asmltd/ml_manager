@@ -8,6 +8,8 @@ services:
     container_name: linear_model_trainer
     env_file:
       - ./docker.env
+    volumes:
+      - ./linear_model:/workspace/linear_model
     depends_on:
       - mlflow-server
 

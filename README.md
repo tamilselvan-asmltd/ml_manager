@@ -109,7 +109,8 @@ To train a model, you will execute its `train.py` script within the Dockerized e
 1.  **Train the Linear Model**:
 
     ```bash
-    docker-compose run --rm linear_model_trainer python linear_model/train.py
+    docker-compose up linear_model
+
     ```
 
     - `--rm`: Removes the container after the command exits.
@@ -118,7 +119,7 @@ To train a model, you will execute its `train.py` script within the Dockerized e
 2.  **Train the Logistic Model**:
 
     ```bash
-    docker-compose run --rm logistic_model_trainer python logistic_model/train.py
+    docker-compose up logistic_model
     ```
 
     - `logistic_model_trainer`: This is the service name defined in `docker-compose.yml` for running the logistic model's training script.
